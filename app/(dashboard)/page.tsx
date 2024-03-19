@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar";
 import Performance from "@/components/performance";
 import GridContainer from '@/components/chart/chartGirdLayout'
 
-export default function Home() {
+export default function RootHome() {
   return (
     <main className="w-full">
       <Navbar />
