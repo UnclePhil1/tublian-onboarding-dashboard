@@ -13,7 +13,7 @@ import {
 
 const EngageRate = () => {
     return (
-        <div className='flex justify-between items-center p-4'>
+        <div className='flex justify-between items-center p-4 mt-0'>
             <h1 className='font-normal'>Engagement Rates</h1>
             <Select>
                 <SelectTrigger className="w-[180px]">

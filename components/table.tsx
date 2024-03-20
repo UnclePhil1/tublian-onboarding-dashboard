@@ -55,20 +55,13 @@ const invoices = [
         totalAmount: "200k",
         paymentMethod: "Bank Transfer",
     },
-    {
-        url: '/Images/profile.jpg',
-        text: "The best time for new beginnings is now.",
-        paymentStatus: "May 12",
-        totalAmount: "300k",
-        paymentMethod: "Credit Card",
-    },
 ]
 
 export function TableLayout() {
     return (
         <div className="">
             <h1 className="font-semibold mb-5 mt-10 px-4">Post Activity</h1>
-            <div className="h-[200px] overflow-y-auto scroll-smooth bg-white rounded-md p-2 custom-scrollbar">
+            <div className="overflow-y-auto scroll-smooth bg-white rounded-md p-2 custom-scrollbar">
                 <Table>
                     <TableBody>
                         {invoices.map((invoice) => (

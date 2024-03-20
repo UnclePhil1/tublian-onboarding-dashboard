@@ -1,6 +1,6 @@
-"use client";
+'use client'
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 
 import DashboardIcon from '@mui/icons-material/Dashboard';
@@ -12,19 +12,23 @@ import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 
-import { cn } from "@/lib/utils";
-import Image from "next/image";
 import Link from "next/link";
 
-const Sidebar = () => {
-    const pathname = usePathname();
-    const [activePath, setActivePath] = useState(pathname);
+import {
+    Sheet,
+    SheetContent,
+    SheetTrigger,
+} from "@/components/ui/sheet"
+import MenuIcon from '@mui/icons-material/Menu';
 
-    // Update activePath whenever the pathname changes
-    useEffect(() => {
-        setActivePath(pathname);
-    }, [pathname]);
-    
+import { cn } from "@/lib/utils";
+
+
+export function SheetMenu() {
+
+    const pathname = usePathname();
+    const [activePath, setActivePath] = useState(pathname || '/dashboard');
+
     const routes = [
         {
             icon: DashboardIcon,
@@ -80,19 +84,13 @@ const Sidebar = () => {
         // Prevent the default action and just set the active path
         setActivePath(url);
     };
-
-
     return (
-        <div className="space-y-4 flex flex-col h-full text-primary w-full">
-            <div className="">
-                <Image
-                    src='/Images/logo.svg'
-                    alt="logo"
-                    width={120}
-                    height={70}
-                    className="object-contain w-12 h-12 mx-auto my-6"
-                />
-                <div className="space-y-2">
+        <Sheet>
+            <SheetTrigger asChild>
+                <MenuIcon className="w-8 h-10" />
+            </SheetTrigger>
+            <SheetContent>
+                <div className="space-y-2 mt-10">
                     {routes.map((route) => (
                         <div
                             onClick={() => onNavigate(route.href, route.pro)}
@@ -109,14 +107,11 @@ const Sidebar = () => {
                         </div>
                     ))}
                 </div>
-            </div>
-
-            <Link href='/' className="flex flex-row gap-y-2 text-sm justify-start items-center flex-1 gap-2 absolute bottom-4 left-4 text-greenDefault hover:text-gray-400">
-                <LogoutIcon className="h-5 w-5" />
-                Logout
-            </Link>
-        </div>
-    );
-};
-
-export default Sidebar;
+                <Link href='/' className="flex flex-row gap-y-2 text-sm justify-start items-center flex-1 gap-2 absolute bottom-5 left-4 text-greenDefault hover:text-gray-400">
+                    <LogoutIcon className="h-5 w-5" />
+                    Logout
+                </Link>
+            </SheetContent>
+        </Sheet>
+    )
+}

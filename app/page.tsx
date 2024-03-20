@@ -7,7 +7,7 @@ export default function RootHome() {
   return (
     <main className="w-full">
       <Navbar />
-      <div className="p-4">
+      <div className="px-4 lg:px-6 pb-20 h-screen overflow-y-auto">
         <Performance />
         <CardComponent />
         <GridContainer />
