@@ -5,7 +5,7 @@ const Profile = () => {
   return (
     <div className='flex justify-start items-start'>
         <Image 
-            src={'/Images/profile.jpg'}
+            src={'./Images/profile.jpg'}
             alt='profile'
             width={700}
             height={300}
