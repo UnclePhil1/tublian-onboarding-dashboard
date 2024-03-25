@@ -3,9 +3,9 @@ import { DefaultizedPieValueType } from '@mui/x-charts';
 import { PieChart, pieArcLabelClasses } from '@mui/x-charts/PieChart';
 
 const data = [
-    { label: 'Group A', value: 530, color: '#283350' },
-    { label: 'Group B', value: 790, color: '#0FA44A' },
-    { label: 'Group C', value: 200, color: '#FFF854' },
+    { label: 'Male', value: 530, color: '#283350' },
+    { label: 'Female', value: 790, color: '#0FA44A' },
+    { label: 'Others', value: 200, color: '#FFF854' },
 ];
 
 const sizing = {

@@ -9,6 +9,9 @@ import {
     CardHeader,
 } from "@/components/ui/card"
 
+import Image from "next/image";
+
+
 const cardArray = [
     {
         socials: 'Followers',
@@ -67,14 +70,15 @@ const CardComponent = () => {
                                         {item.date}
                                     </div>
                                     <div className="flex flex-row gap-2">
-                                    <item.chartIcon className="h-8 w-8 text-greenDefault" />
+                                        <item.chartIcon className="h-8 w-8 text-greenDefault" />
                                     </div>
                                 </div>
                             </CardContent>
-                        </Card>
+                        </Card> 
                     </div>
                 ))
             }
+
         </div>
     )
 }
