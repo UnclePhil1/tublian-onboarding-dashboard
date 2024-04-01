@@ -86,7 +86,7 @@ const Sidebar = () => {
         <div className="space-y-4 flex flex-col h-full text-primary w-full">
             <div className="">
                 <Image
-                    src='./Images/logo.svg'
+                    src='/Images/logo.svg'
                     alt="logo"
                     width={120}
                     height={70}
