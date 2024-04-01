@@ -6,7 +6,7 @@ const Loading = () => {
         <div>
             <div className="w-full h-full flex justify-center items-center text-center pt-[20%]">
                 <Image
-                    src={'/Images/spinner.gif'}
+                    src={'./Images/spinner.gif'}
                     alt='loader'
                     width={300}
                     height={120}

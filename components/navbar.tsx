@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="flex flex-col justify-start items-start">
           <p className="text-sm m-0 p-0 text-primary/80 font-semibold md:block hidden">Metrics looking good, Snow!</p>
           <Image
-            src='/Images/logo.svg'
+            src='./Images/logo.svg'
             alt="logo"
             width={120}
             height={70}

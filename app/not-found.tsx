@@ -7,7 +7,7 @@ export default function NotFound() {
         <div className='flex justify-center items-center w-screen h-screen'>
             <div className="text-center space-y-2">
                 <Image
-                    src={'/Images/notfound.svg'}
+                    src={'./Images/notfound.svg'}
                     alt='profile'
                     width={700}
                     height={300}

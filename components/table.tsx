@@ -14,42 +14,42 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 const invoices = [
     {
-        url: '/Images/profile.jpg',
+        url: './Images/profile.jpg',
         text: "Believe you can and you're halfway there.",
         paymentStatus: "May 10",
         totalAmount: "1.4k",
         paymentMethod: "Credit Card",
     },
     {
-        url: '/Images/profile.jpg',
+        url: './Images/profile.jpg',
         text: "Every moment is a fresh beginning.",
         paymentStatus: "June 12",
         totalAmount: "3.3k",
         paymentMethod: "PayPal",
     },
     {
-        url: '/Images/profile.jpg',
+        url: './Images/profile.jpg',
         text: "Dream big and dare to fail",
         paymentStatus: "April 11",
         totalAmount: "200k",
         paymentMethod: "Bank Transfer",
     },
     {
-        url: '/Images/profile.jpg',
+        url: './Images/profile.jpg',
         text: "No pressure, no diamonds.",
         paymentStatus: "May 12",
         totalAmount: "450k",
         paymentMethod: "Credit Card",
     },
     {
-        url: '/Images/profile.jpg',
+        url: './Images/profile.jpg',
         text: "Turn your wounds into wisdom.",
         paymentStatus: "April 1",
         totalAmount: "5.5k",
         paymentMethod: "PayPal",
     },
     {
-        url: '/Images/profile.jpg',
+        url: './Images/profile.jpg',
         text: "Do what you love, love what you do.",
         paymentStatus: "June 19",
         totalAmount: "200k",
