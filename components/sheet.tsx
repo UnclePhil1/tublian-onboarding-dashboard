@@ -25,14 +25,15 @@ import { cn } from "@/lib/utils";
 
 
 export function SheetMenu() {
-
+    // defining some constants for the sidebar navigations
     const pathname = usePathname();
     const [activePath, setActivePath] = useState(pathname || '/dashboard');
 
+    // the sidebar link array
     const routes = [
         {
             icon: DashboardIcon,
-            href: "/dashboard",
+            href: "/",
             label: "Dashboard",
             pro: false
         },
@@ -80,6 +81,7 @@ export function SheetMenu() {
         },
     ];
 
+    // Function to define the routing when a link is clicked on in the sidebar on a smallScreen
     const onNavigate = (url: string, pro: boolean) => {
         // Prevent the default action and just set the active path
         setActivePath(url);
@@ -91,6 +93,7 @@ export function SheetMenu() {
             </SheetTrigger>
             <SheetContent>
                 <div className="space-y-2 mt-10">
+                    {/* Rendering the array using .map() */}
                     {routes.map((route) => (
                         <div
                             onClick={() => onNavigate(route.href, route.pro)}

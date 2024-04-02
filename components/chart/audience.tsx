@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
 
+// Define the Audience component
 const Audience = () => {
     return (
+        // Container with padding
         <div className='p-4'>
-            <h1 className='font-normal mb-8'>Audience Demography</h1>
+            {/* Heading */}
+            <h1 className='font-semibold mb-8'>Audience Demography</h1>
         </div>
-    )
-}
+    );
+};
 
-export default Audience
+// Export the Audience component
+export default Audience;

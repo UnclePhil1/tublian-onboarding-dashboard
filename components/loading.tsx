@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
+// Simple loading compoenent with an animated loader icon.
 const Loading = () => {
     return (
         <div>

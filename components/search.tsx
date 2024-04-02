@@ -8,7 +8,9 @@ const SearchInputBar = () => {
 
     return (
         <div className='relative w-[50%] hidden lg:block'>
+            {/* Search icon from lucide-react */}
             <Search className='absolute h-4 w-4 top-3 left-4 text-muted-foreground cursor-pointer hover:text-slate-200' />
+            {/* Search input from ui/Input folder */}
             <Input
                 placeholder='Search'
                 className='pl-10 bg-transparent'

@@ -9,9 +9,8 @@ import {
     CardHeader,
 } from "@/components/ui/card"
 
-import Image from "next/image";
 
-
+//defining the array for a grid card 
 const cardArray = [
     {
         socials: 'Followers',
@@ -45,26 +44,27 @@ const cardArray = [
 const CardComponent = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-4'>
+            {/* mapping out the cardArray using "".map()"" method*/}
             {
                 cardArray.map((item, index) => (
-                    <div className="hover:bg-secondary" key={index}>
+                    <div className="" key={index}>
                         <Card>
                             <CardHeader>
                                 <div className="flex justify-between items-center">
-                                    <div className="flex flex-row gap-2 text-sm">
+                                    <div className="flex flex-row gap-2 text-sm text-lightgray">
                                         {item.socials}
                                     </div>
                                     <div className="flex flex-row gap-2">
                                         <item.iconArrow className="h-5 w-5" />
                                     </div>
                                 </div>
-                                <h1 className="text-xl font-semibold">{item.text}</h1>
+                                <h1 className="text-3xl font-semibold">{item.text}</h1>
                             </CardHeader>
                             <CardContent>
                                 <div className="flex justify-between items-center">
-                                    <div className="flex flex-row gap-2 text-sm items-center">
+                                    <div className="flex flex-row gap-2 text-sm items-center text-lightgray">
                                         <item.iconUpArrow className="h-4 w-4 text-greenDefault" />
-                                        <p className="text-greenDefault">
+                                        <p className="text-greenDefault test-sm">
                                             {item.percent}
                                         </p>
                                         {item.date}

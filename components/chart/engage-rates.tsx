@@ -1,5 +1,4 @@
-import Link from 'next/link'
-import React from 'react'
+import React from 'react'; // Importing React library
 
 import {
     Select,
@@ -9,19 +8,29 @@ import {
     SelectLabel,
     SelectTrigger,
     SelectValue,
-} from "@/components/ui/select"
+} from "@/components/ui/select"; // Importing select components
 
+// Define the EngageRate component
 const EngageRate = () => {
     return (
+        // Container with flex layout, aligning items to the center
         <div className='flex justify-between items-center p-4 mt-0'>
-            <h1 className='font-normal'>Engagement Rates</h1>
+            {/* Heading */}
+            <h1 className='font-semibold'>Engagement Rates</h1>
+            {/* Dropdown select component */}
             <Select>
-                <SelectTrigger className="w-[180px]">
+                {/* Select trigger */}
+                <SelectTrigger className="w-[100px]">
+                    {/* Select value with placeholder */}
                     <SelectValue placeholder="Weekly" />
                 </SelectTrigger>
+                {/* Select content */}
                 <SelectContent>
+                    {/* Select group */}
                     <SelectGroup>
+                        {/* Select label */}
                         <SelectLabel>Date</SelectLabel>
+                        {/* Select items */}
                         <SelectItem value="hourly">Hourly</SelectItem>
                         <SelectItem value="daily">Daily</SelectItem>
                         <SelectItem value="weekly">Weekly</SelectItem>
@@ -31,7 +40,8 @@ const EngageRate = () => {
                 </SelectContent>
             </Select>
         </div>
-    )
+    );
 }
 
-export default EngageRate
+// Export the EngageRate component
+export default EngageRate;
